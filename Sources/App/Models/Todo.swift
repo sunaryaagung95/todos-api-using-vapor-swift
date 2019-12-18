@@ -2,6 +2,8 @@ import Vapor
 import FluentPostgreSQL
 
 final class Todo: PostgreSQLModel {
+    static let entity = "todos"
+
     var id: Int?
     var title: String
     var finished: Bool
